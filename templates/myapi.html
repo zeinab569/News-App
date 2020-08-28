@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}My Api{% endblock title %}
+
+{% block content %}
+<div class="container">
+<div class="jumbotron">
+    <h1 class="display-4">This is My Api of My NewsPaper</h1>
+    <p class="lead">A NewsPaper Website built with Django.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'api article' %}" role="button">View My API Article</a>
+    </p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'api comment' %}" role="button">View My API Comment</a>
+    </p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'api user' %}" role="button">View My API User</a>
+    </p>
+</div>
+</div>
+{% endblock content %}
