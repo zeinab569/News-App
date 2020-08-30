@@ -10,9 +10,9 @@ class ArticleSerializer(serializers.ModelSerializer):
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
-        fields = ("article","comment","author")
+        fields = ("id","article","comment","author")
 
 class UsersSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ("username","email","age")
+        fields = ("id","username","email","age")
